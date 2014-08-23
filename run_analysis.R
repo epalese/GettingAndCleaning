@@ -3,7 +3,10 @@ getUCIHARTidyDataSet <- function(fileDir = "./") {
   featureNames <- read.csv(paste(fileDir, 'UCI HAR Dataset/features.txt', sep=''), sep="", header=FALSE)
   activityNames <- read.csv(paste(fileDir, 'UCI HAR Dataset/activity_labels.txt', sep=''), sep="", header=FALSE)
   
+  # Build a vector containing the classes of the features to import.
+  # This vector will be used in the read.csv to improve import performances.
   classes <- rep("numeric", 561)
+  
   # load test data
   test.x <- read.csv(paste(fileDir, 'UCI HAR Dataset/test/X_test.txt', sep=''), sep="", header=FALSE, colClasses=classes)
   names(test.x) <- featureNames$V2

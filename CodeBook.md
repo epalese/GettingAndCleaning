@@ -1,8 +1,31 @@
 # Code book #
 
-The function getUCIHARTidyDataSet() returns a data frame with the following variables:
-* Activity
-* Subject
+The function getUCIHARTidyDataSet() processes the data downloadable at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip. 
+
+The actions performed by the function are the following:
+
+* load the file UCI HAR Dataset/test/X_test.txt
+* adding column names using the descriptions in UCI HAR Dataset/features.txt
+* loading the file UCI HAR Dataset/test/y_test.txt adding the activity descriptions found in UCI HAR Dataset/activity_labels.txt
+* subsetting the data frame taking only columns with mean() and std() in their column names
+
+* load the file UCI HAR Dataset/train/X_train.txt
+* adding column names using the descriptions in UCI HAR Dataset/features.txt
+* loading the file UCI HAR Dataset/train/y_train.txt adding the activity descriptions found in UCI HAR Dataset/activity_labels.txt
+* subsetting the data frame taking only columns with mean() and std() in their column names
+
+* appending the two data frame
+* computing the average of the mean() and std() columns grouping by activity and subject.
+
+The function returns a data frame with the following variables:
+* Activity: the value ranges between the following
+* * WALKING
+* * WALKING_UPSTAIRS
+* * WALKING_DOWNSTAIRS
+* * SITTING
+* * STANDING
+* * LAYING
+* Subject: identifies the subject who performed the activity. Its range is from 1 to 30.
 * AVG_tBodyAcc-mean()-X
 * AVG_tBodyAcc-mean()-Y
 * AVG_tBodyAcc-mean()-Z
@@ -69,3 +92,10 @@ The function getUCIHARTidyDataSet() returns a data frame with the following vari
 * AVG_fBodyBodyGyroMag-std()
 * AVG_fBodyBodyGyroJerkMag-mean()
 * AVG_fBodyBodyGyroJerkMag-std()
+
+All the AVG_* variables are the average of the corresponding variables found in the test and train dataset:
+* UCI HAR Dataset/train/X_test.txt
+* UCI HAR Dataset/train/X_train.txt
+
+The average is computed grouping by activity and subject.
+At the end the resulting data frame returned by getUCIHARTidyDataSet() will contains a row per every different value of the couple (activity, subject).

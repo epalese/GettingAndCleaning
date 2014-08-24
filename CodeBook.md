@@ -19,12 +19,12 @@ The actions performed by the function are the following:
 
 The function returns a data frame with the following variables:
 * Activity: the value ranges between the following
-  * WALKING
-* * WALKING_UPSTAIRS
-* * WALKING_DOWNSTAIRS
-* * SITTING
-* * STANDING
-* * LAYING
+ * WALKING
+ * WALKING_UPSTAIRS
+ * WALKING_DOWNSTAIRS
+ * SITTING
+ * STANDING
+ * LAYING
 * Subject: identifies the subject who performed the activity. Its range is from 1 to 30.
 * AVG_tBodyAcc-mean()-X
 * AVG_tBodyAcc-mean()-Y

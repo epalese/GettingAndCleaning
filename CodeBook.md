@@ -19,7 +19,7 @@ The actions performed by the function are the following:
 
 The function returns a data frame with the following variables:
 * Activity: the value ranges between the following
-* * WALKING
+  * WALKING
 * * WALKING_UPSTAIRS
 * * WALKING_DOWNSTAIRS
 * * SITTING

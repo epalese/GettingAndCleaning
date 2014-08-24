@@ -2,26 +2,70 @@
 
 The function getUCIHARTidyDataSet() returns a data frame with the following variables:
 * Activity
-"Subject"                         "AVG_tBodyAcc-mean()-X"          
- [4] "AVG_tBodyAcc-mean()-Y"           "AVG_tBodyAcc-mean()-Z"           "AVG_tBodyAcc-std()-X"           
- [7] "AVG_tBodyAcc-std()-Y"            "AVG_tBodyAcc-std()-Z"            "AVG_tGravityAcc-mean()-X"       
-[10] "AVG_tGravityAcc-mean()-Y"        "AVG_tGravityAcc-mean()-Z"        "AVG_tGravityAcc-std()-X"        
-[13] "AVG_tGravityAcc-std()-Y"         "AVG_tGravityAcc-std()-Z"         "AVG_tBodyAccJerk-mean()-X"      
-[16] "AVG_tBodyAccJerk-mean()-Y"       "AVG_tBodyAccJerk-mean()-Z"       "AVG_tBodyAccJerk-std()-X"       
-[19] "AVG_tBodyAccJerk-std()-Y"        "AVG_tBodyAccJerk-std()-Z"        "AVG_tBodyGyro-mean()-X"         
-[22] "AVG_tBodyGyro-mean()-Y"          "AVG_tBodyGyro-mean()-Z"          "AVG_tBodyGyro-std()-X"          
-[25] "AVG_tBodyGyro-std()-Y"           "AVG_tBodyGyro-std()-Z"           "AVG_tBodyGyroJerk-mean()-X"     
-[28] "AVG_tBodyGyroJerk-mean()-Y"      "AVG_tBodyGyroJerk-mean()-Z"      "AVG_tBodyGyroJerk-std()-X"      
-[31] "AVG_tBodyGyroJerk-std()-Y"       "AVG_tBodyGyroJerk-std()-Z"       "AVG_tBodyAccMag-mean()"         
-[34] "AVG_tBodyAccMag-std()"           "AVG_tGravityAccMag-mean()"       "AVG_tGravityAccMag-std()"       
-[37] "AVG_tBodyAccJerkMag-mean()"      "AVG_tBodyAccJerkMag-std()"       "AVG_tBodyGyroMag-mean()"        
-[40] "AVG_tBodyGyroMag-std()"          "AVG_tBodyGyroJerkMag-mean()"     "AVG_tBodyGyroJerkMag-std()"     
-[43] "AVG_fBodyAcc-mean()-X"           "AVG_fBodyAcc-mean()-Y"           "AVG_fBodyAcc-mean()-Z"          
-[46] "AVG_fBodyAcc-std()-X"            "AVG_fBodyAcc-std()-Y"            "AVG_fBodyAcc-std()-Z"           
-[49] "AVG_fBodyAccJerk-mean()-X"       "AVG_fBodyAccJerk-mean()-Y"       "AVG_fBodyAccJerk-mean()-Z"      
-[52] "AVG_fBodyAccJerk-std()-X"        "AVG_fBodyAccJerk-std()-Y"        "AVG_fBodyAccJerk-std()-Z"       
-[55] "AVG_fBodyGyro-mean()-X"          "AVG_fBodyGyro-mean()-Y"          "AVG_fBodyGyro-mean()-Z"         
-[58] "AVG_fBodyGyro-std()-X"           "AVG_fBodyGyro-std()-Y"           "AVG_fBodyGyro-std()-Z"          
-[61] "AVG_fBodyAccMag-mean()"          "AVG_fBodyAccMag-std()"           "AVG_fBodyBodyAccJerkMag-mean()" 
-[64] "AVG_fBodyBodyAccJerkMag-std()"   "AVG_fBodyBodyGyroMag-mean()"     "AVG_fBodyBodyGyroMag-std()"     
-[67] "AVG_fBodyBodyGyroJerkMag-mean()" "AVG_fBodyBodyGyroJerkMag-std()" 
+* Subject
+* AVG_tBodyAcc-mean()-X
+* AVG_tBodyAcc-mean()-Y
+* AVG_tBodyAcc-mean()-Z
+* AVG_tBodyAcc-std()-X
+* AVG_tBodyAcc-std()-Y
+* AVG_tBodyAcc-std()-Z
+* AVG_tGravityAcc-mean()-X
+* AVG_tGravityAcc-mean()-Y
+* AVG_tGravityAcc-mean()-Z
+* AVG_tGravityAcc-std()-X
+* AVG_tGravityAcc-std()-Y
+* AVG_tGravityAcc-std()-Z
+* AVG_tBodyAccJerk-mean()-X
+* AVG_tBodyAccJerk-mean()-Y
+* AVG_tBodyAccJerk-mean()-Z
+* AVG_tBodyAccJerk-std()-X
+* AVG_tBodyAccJerk-std()-Y
+* AVG_tBodyAccJerk-std()-Z
+* AVG_tBodyGyro-mean()-X
+* AVG_tBodyGyro-mean()-Y
+* AVG_tBodyGyro-mean()-Z
+* AVG_tBodyGyro-std()-X
+* AVG_tBodyGyro-std()-Y
+* AVG_tBodyGyro-std()-Z
+* AVG_tBodyGyroJerk-mean()-X
+* AVG_tBodyGyroJerk-mean()-Y
+* AVG_tBodyGyroJerk-mean()-Z
+* AVG_tBodyGyroJerk-std()-X
+* AVG_tBodyGyroJerk-std()-Y
+* AVG_tBodyGyroJerk-std()-Z
+* AVG_tBodyAccMag-mean()
+* AVG_tBodyAccMag-std()
+* AVG_tGravityAccMag-mean()
+* AVG_tGravityAccMag-std()
+* AVG_tBodyAccJerkMag-mean()
+* AVG_tBodyAccJerkMag-std()
+* AVG_tBodyGyroMag-mean()
+* AVG_tBodyGyroMag-std()
+* AVG_tBodyGyroJerkMag-mean()
+* AVG_tBodyGyroJerkMag-std()
+* AVG_fBodyAcc-mean()-X
+* AVG_fBodyAcc-mean()-Y
+* AVG_fBodyAcc-mean()-Z
+* AVG_fBodyAcc-std()-X
+* AVG_fBodyAcc-std()-Y
+* AVG_fBodyAcc-std()-Z
+* AVG_fBodyAccJerk-mean()-X
+* AVG_fBodyAccJerk-mean()-Y
+* AVG_fBodyAccJerk-mean()-Z
+* AVG_fBodyAccJerk-std()-X
+* AVG_fBodyAccJerk-std()-Y
+* AVG_fBodyAccJerk-std()-Z
+* AVG_fBodyGyro-mean()-X
+* AVG_fBodyGyro-mean()-Y
+* AVG_fBodyGyro-mean()-Z
+* AVG_fBodyGyro-std()-X
+* AVG_fBodyGyro-std()-Y
+* AVG_fBodyGyro-std()-Z
+* AVG_fBodyAccMag-mean()
+* AVG_fBodyAccMag-std()
+* AVG_fBodyBodyAccJerkMag-mean()
+* AVG_fBodyBodyAccJerkMag-std()
+* AVG_fBodyBodyGyroMag-mean()
+* AVG_fBodyBodyGyroMag-std()
+* AVG_fBodyBodyGyroJerkMag-mean()
+* AVG_fBodyBodyGyroJerkMag-std()
